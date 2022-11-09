@@ -1,0 +1,8 @@
+1. create html for displaying, creating and updating data and add styles
+2. create table in db
+4. create connection to db.
+5. transfer data from db.
+6. create validations for create/update
+7. check get/post requests for each page.
+8. add delete functionality.
+9. add search
