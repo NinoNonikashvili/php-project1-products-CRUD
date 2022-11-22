@@ -1,0 +1,14 @@
+body{
+    padding:50px;
+    background-color:#e8eff3;
+}
+
+.header{
+    margin:20px 0;
+}
+.back-btn{
+    margin:20px 0;
+}
+.cell-img{
+    width:120px;
+}
