@@ -1,0 +1,15 @@
+{
+    "name": "user/product_crud_beginner",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "NinoNonikashvili",
+            "email": "nonikashvilinino8799@gmail.com"
+        }
+    ],
+    "require": {}
+}
