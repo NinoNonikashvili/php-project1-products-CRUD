@@ -9,6 +9,7 @@
 
 
 ## Overview
+- please, check the oop branch for OOP version of this project
 - this is a products CRUD project. the ideas that were taken in mind during building process are: 
     1. avoiding code duplication - I tried to create separate files for reusable codes.
     2. security issues - I have used post method for deleting items to minimize the risk of sql injection.
