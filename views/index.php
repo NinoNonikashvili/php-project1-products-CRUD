@@ -19,8 +19,7 @@
 
 
 ?>
-
-<body>
+ <body>
     <h1 class="header">Teddy-Bear Shop</h1>
     <form action="" method="get" >
       <div class="input-group mb-4">
@@ -67,4 +66,4 @@
 
     <a href="create" type="button" class="btn btn-primary">Add a toy</a>
 </body>
-</html>
+</html>' 

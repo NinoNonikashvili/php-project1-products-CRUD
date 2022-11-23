@@ -1,4 +1,4 @@
-<form method="POST" action="create.php" enctype="multipart/form-data" >
+<form method="POST" action="" enctype="multipart/form-data" >
 <?php if($product['image']): ?>
   <img class="cell-img" src="<?php echo $product['image']?>" alt="image">
   <?php endif; ?>

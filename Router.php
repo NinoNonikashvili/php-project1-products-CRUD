@@ -23,7 +23,10 @@ class Router {
     }
     public function resolve(){
         $method = strtolower($_SERVER['REQUEST_METHOD']);  //get current method and url to choose appropriate entrie from getRoutes & postRoutes arrays.
-        $url = $_SERVER['PATH_INFO'] ?? '/';
+        $url = $_SERVER['REQUEST_URI'] ?? '/';
+        if(strpos($url, '?') !== false){
+            $url = substr($url, 0, strpos($url, '?'));
+        }
         if($method==='get')
         {
             $fn = $this->getRoutes[$url] ?? null; //if you write /blabla in browser it will go on error because there is no entry in get/postRoutes with url = /blabla
@@ -39,7 +42,7 @@ class Router {
         }
         call_user_func($fn, $this); //send the reference to this class to the function 
     }
-    public function renderView($view, $params)
+    public function renderView($view, $params, $keyword = '')
     {   
         foreach($params as $key=>$value){
             $$key = $value; //$paramsshi ukve chadebulia is saxeli rac dabla forms chirdeba, anu arc ki chans aq ise iqmneba formistvis sachirp cvladi da ivseba tavisive mnishvnelobit
